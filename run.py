@@ -4,7 +4,7 @@ from osrs_api.const import AccountType
 from datetime import datetime
 
 username = 'DaGuusIron'
-now = datetime.now().isoformat()
+now = datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%SZ')
 
 user = Hiscores(username, AccountType.IRONMAN)
 
